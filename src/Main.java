@@ -9,11 +9,8 @@ public class Main {
         myFilm.evaluate(10);
         myFilm.evaluate(10);
         myFilm.evaluate(7.4);
-
-
-        System.out.println(myFilm.calculateAverage());
-        System.out.println("****************************");
-
+        System.out.println(myFilm.getTotalEvaluations());
+        System.out.println(myFilm.getSumEvaluations());
         System.out.println(myFilm.calculateAverage());
 
         Film otherFilm = new Film();
