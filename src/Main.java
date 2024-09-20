@@ -6,11 +6,14 @@ public class Main {
         myFilm.lengthInMinutes = 120;
 
         myFilm.showTechnicalSheet();
-        myFilm.evaluate(7.6);
         myFilm.evaluate(10);
+        myFilm.evaluate(10);
+        myFilm.evaluate(7.4);
 
-        System.out.println(myFilm.sumEvaluations);
-        System.out.println(myFilm.totalEvaluations);
+
+        System.out.println(myFilm.calculateAverage());
+        System.out.println("****************************");
+
         System.out.println(myFilm.calculateAverage());
 
         Film otherFilm = new Film();
