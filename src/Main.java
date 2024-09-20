@@ -5,16 +5,20 @@ public class Main {
         myFilm.releaseDate = 2021;
         myFilm.lengthInMinutes = 120;
 
-        System.out.println("Mi pelicula es: " + myFilm.name);
-        System.out.println("Su fecha de lanzamiento es: " + myFilm.releaseDate);
+        myFilm.showTechnicalSheet();
+        myFilm.evaluate(7.6);
+        myFilm.evaluate(10);
+
+        System.out.println(myFilm.sumEvaluations);
+        System.out.println(myFilm.totalEvaluations);
+        System.out.println(myFilm.calculateAverage());
 
         Film otherFilm = new Film();
         otherFilm.name  = "Matrix";
         otherFilm.releaseDate = 1998;
         otherFilm.lengthInMinutes = 180;
 
-        System.out.println("Mi pelicula es: " + otherFilm.name);
-        System.out.println("Su fecha de lanzamiento es: " + otherFilm.releaseDate);
+//        otherFilm.showTechnicalSheet();
 
     }
 }
