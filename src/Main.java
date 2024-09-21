@@ -1,3 +1,5 @@
+import com.aluracursos.screenmatch.models.Film;
+
 public class Main {
     public static void main(String[] args) {
         Film myFilm = new Film();
@@ -13,11 +15,17 @@ public class Main {
         System.out.println(myFilm.getSumEvaluations());
         System.out.println(myFilm.calculateAverage());
 
-        Film otherFilm = new Film();
-        otherFilm.name  = "Matrix";
-        otherFilm.releaseDate = 1998;
-        otherFilm.lengthInMinutes = 180;
 
+
+
+
+
+
+//        com.aluracursos.screenmatch.models.Film otherFilm = new com.aluracursos.screenmatch.models.Film();
+//        otherFilm.name  = "Matrix";
+//        otherFilm.releaseDate = 1998;
+//        otherFilm.lengthInMinutes = 180;
+//
 //        otherFilm.showTechnicalSheet();
 
     }
