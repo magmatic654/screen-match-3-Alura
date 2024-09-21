@@ -3,9 +3,11 @@ import com.aluracursos.screenmatch.models.Film;
 public class Main {
     public static void main(String[] args) {
         Film myFilm = new Film();
-        myFilm.name = "Encanto";
-        myFilm.releaseDate = 2021;
-        myFilm.lengthInMinutes = 120;
+
+        myFilm.setName("Encanto");
+        myFilm.setReleaseDate(2021);
+        myFilm.setLengthInMinutes(120);
+        myFilm.setIsinclude(true);
 
         myFilm.showTechnicalSheet();
         myFilm.evaluate(10);
@@ -14,6 +16,10 @@ public class Main {
         System.out.println(myFilm.getTotalEvaluations());
         System.out.println(myFilm.getSumEvaluations());
         System.out.println(myFilm.calculateAverage());
+
+        System.out.println(myFilm.getName());
+        System.out.println(myFilm.getReleaseDate());
+        System.out.println(myFilm.getLengthInMinutes());
 
 
 

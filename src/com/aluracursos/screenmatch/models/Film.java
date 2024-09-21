@@ -1,12 +1,28 @@
 package com.aluracursos.screenmatch.models;
 
 public class Film {
-    public String name;
-    public int releaseDate;
-    public int lengthInMinutes;
-    public boolean Isinclude;
+    private String name;
+    private int releaseDate;
+    private int lengthInMinutes;
+    private boolean isInclude;
     private double sumEvaluations;
     private int totalEvaluations;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setReleaseDate(int releaseDate){
+        this.releaseDate = releaseDate;
+    }
+
+    public void setLengthInMinutes(int lengthInMinutes){
+        this.lengthInMinutes = lengthInMinutes;
+    }
+
+    public void setIsinclude(boolean isInclude) {
+        this.isInclude = isInclude;
+    }
 
     public int getTotalEvaluations(){
         return totalEvaluations;
@@ -14,6 +30,22 @@ public class Film {
 
    public double getSumEvaluations(){
         return sumEvaluations;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getReleaseDate() {
+        return releaseDate;
+    }
+
+    public int getLengthInMinutes() {
+        return lengthInMinutes;
+    }
+
+    public boolean isInclude() {
+        return isInclude;
     }
 
     public void showTechnicalSheet(){
