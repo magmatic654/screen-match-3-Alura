@@ -1,6 +1,7 @@
 package com.aluracursos.screenmatch.models;
 
-public class Film {
+public class Movie {
+    public boolean calculateAverage;
     private String name;
     private int releaseDate;
     private int lengthInMinutes;

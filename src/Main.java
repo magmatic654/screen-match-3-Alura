@@ -1,25 +1,25 @@
-import com.aluracursos.screenmatch.models.Film;
+import com.aluracursos.screenmatch.models.Movie;
 
 public class Main {
     public static void main(String[] args) {
-        Film myFilm = new Film();
+        Movie myMovie = new Movie();
 
-        myFilm.setName("Encanto");
-        myFilm.setReleaseDate(2021);
-        myFilm.setLengthInMinutes(120);
-        myFilm.setIsinclude(true);
+        myMovie.setName("Encanto");
+        myMovie.setReleaseDate(2021);
+        myMovie.setLengthInMinutes(120);
+        myMovie.setIsinclude(true);
 
-        myFilm.showTechnicalSheet();
-        myFilm.evaluate(10);
-        myFilm.evaluate(10);
-        myFilm.evaluate(7.4);
-        System.out.println(myFilm.getTotalEvaluations());
-        System.out.println(myFilm.getSumEvaluations());
-        System.out.println(myFilm.calculateAverage());
+        myMovie.showTechnicalSheet();
+        myMovie.evaluate(10);
+        myMovie.evaluate(10);
+        myMovie.evaluate(7.4);
+        System.out.println(myMovie.getTotalEvaluations());
+        System.out.println(myMovie.getSumEvaluations());
+        System.out.println(myMovie.calculateAverage());
 
-        System.out.println(myFilm.getName());
-        System.out.println(myFilm.getReleaseDate());
-        System.out.println(myFilm.getLengthInMinutes());
+        System.out.println(myMovie.getName());
+        System.out.println(myMovie.getReleaseDate());
+        System.out.println(myMovie.getLengthInMinutes());
 
 
 
