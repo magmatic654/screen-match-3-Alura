@@ -1,4 +1,5 @@
 import com.aluracursos.screenmatch.models.Movie;
+import com.aluracursos.screenmatch.models.Serie;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,6 +21,18 @@ public class Main {
         System.out.println(myMovie.getName());
         System.out.println(myMovie.getReleaseDate());
         System.out.println(myMovie.getLengthInMinutes());
+
+
+        Serie houseOfDragons = new Serie();
+        houseOfDragons.setName("La casa del dragón");
+        houseOfDragons.setReleaseDate(2022);
+        houseOfDragons.setSeasons(1);
+        houseOfDragons.setMinutesForEpisode(50);
+        houseOfDragons.setEpisodiesForSeason(10);
+        System.out.println(houseOfDragons.getLengthInMinutes());
+        houseOfDragons.showTechnicalSheet();
+
+
 
 
 

@@ -52,7 +52,7 @@ public class Title {
     public void showTechnicalSheet(){
         System.out.println("El nombre de la pelicula es: " + name);
         System.out.println("Su fecha de lanzamiento es: " + releaseDate);
-        System.out.println("Duracion en minutos: " + lengthInMinutes);
+        System.out.println("Duracion en minutos: " + getLengthInMinutes());
     }
 
     public void evaluate(double note){

@@ -5,6 +5,11 @@ public class Serie extends Title{
     int episodiesForSeason;
     int minutesForEpisode;
 
+    @Override
+    public int getLengthInMinutes(){
+        return getEpisodiesForSeason() * getMinutesForEpisode() * getSeasons();
+    }
+
     public int getSeasons() {
         return seasons;
     }
@@ -28,4 +33,6 @@ public class Serie extends Title{
     public void setMinutesForEpisode(int minutesForEpisode) {
         this.minutesForEpisode = minutesForEpisode;
     }
+
+
 }
