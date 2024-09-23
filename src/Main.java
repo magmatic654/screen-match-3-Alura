@@ -1,3 +1,4 @@
+import com.aluracursos.screenmatch.calculations.CalculatorOfTime;
 import com.aluracursos.screenmatch.models.Movie;
 import com.aluracursos.screenmatch.models.Serie;
 
@@ -32,20 +33,19 @@ public class Main {
         System.out.println(houseOfDragons.getLengthInMinutes());
         houseOfDragons.showTechnicalSheet();
 
+        Movie otherMovie = new Movie();
+        otherMovie.setName("Matrix");
+        otherMovie.setReleaseDate(1998);
+        otherMovie.setLengthInMinutes(180);
+        otherMovie.showTechnicalSheet();
 
-
-
-
-
-
-
-
-//        com.aluracursos.screenmatch.models.Film otherFilm = new com.aluracursos.screenmatch.models.Film();
-//        otherFilm.name  = "Matrix";
-//        otherFilm.releaseDate = 1998;
-//        otherFilm.lengthInMinutes = 180;
-//
-//        otherFilm.showTechnicalSheet();
+        CalculatorOfTime calculator = new CalculatorOfTime();
+        calculator.includes(myMovie);
+        calculator.includes(houseOfDragons);
+        calculator.includes(otherMovie);
+        System.out.println("Tiempo necesario para ver tus titulos favoritos : "
+                + calculator.getTotalTime()
+                + " minutos");
 
     }
 }
