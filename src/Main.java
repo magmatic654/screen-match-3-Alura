@@ -1,4 +1,6 @@
 import com.aluracursos.screenmatch.calculations.CalculatorOfTime;
+import com.aluracursos.screenmatch.calculations.RecomendationFilter;
+import com.aluracursos.screenmatch.models.Episode;
 import com.aluracursos.screenmatch.models.Movie;
 import com.aluracursos.screenmatch.models.Serie;
 
@@ -46,6 +48,18 @@ public class Main {
         System.out.println("Tiempo necesario para ver tus titulos favoritos : "
                 + calculator.getTotalTime()
                 + " minutos");
+
+        RecomendationFilter recomendationFilter = new RecomendationFilter();
+        recomendationFilter.filter(myMovie);
+
+        Episode episode = new Episode();
+        episode.setNumber(1);
+        episode.setName("La casa Targayren");
+        episode.setSerie(houseOfDragons);
+        episode.setTotalVisualizations(50);
+
+        recomendationFilter.filter(episode);
+
 
     }
 }

@@ -32,12 +32,20 @@ public class Episode implements Clasification {
         this.serie = serie;
     }
 
+    public int getTotalVisualizations() {
+        return totalVisualizations;
+    }
+
+    public void setTotalVisualizations(int totalVisualizations) {
+        this.totalVisualizations = totalVisualizations;
+    }
+
     @Override
     public int getClasification() {
-        if (totalVisualizations > 100){
-            return getClasification();
+        if (totalVisualizations >= 100){
+            return 4;
         }else{
-            return 0;
+            return 2;
         }
     }
 }
