@@ -16,4 +16,9 @@ public class Movie extends Title implements Clasification {
     public int getClasification(){
         return (int) calculateAverage() / 2;
     }
+
+    @Override
+    public String toString() {
+        return "Pelicula: " + this.getName() + " (" + getReleaseDate() + ")";
+    }
 }
