@@ -25,7 +25,6 @@ public class Main {
         System.out.println(myMovie.getReleaseDate());
         System.out.println(myMovie.getLengthInMinutes());
 
-
         Serie houseOfDragons = new Serie();
         houseOfDragons.setName("La casa del dragón");
         houseOfDragons.setReleaseDate(2022);
@@ -60,6 +59,6 @@ public class Main {
 
         recomendationFilter.filter(episode);
 
-
+        var haroldMovie = new Movie();
     }
 }
