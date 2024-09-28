@@ -4,6 +4,8 @@ import com.aluracursos.screenmatch.models.Episode;
 import com.aluracursos.screenmatch.models.Movie;
 import com.aluracursos.screenmatch.models.Serie;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Movie myMovie = new Movie();
@@ -60,5 +62,22 @@ public class Main {
         recomendationFilter.filter(episode);
 
         var haroldMovie = new Movie();
+        haroldMovie.setName("Alice in Wonderland");
+        haroldMovie.setDirector("Tim Burton");
+        haroldMovie.setReleaseDate(2010);
+        haroldMovie.setLengthInMinutes(108);
+
+        ArrayList<Movie> movieList = new ArrayList<>();
+        movieList.add(haroldMovie);
+        movieList.add(myMovie);
+        movieList.add(otherMovie);
+
+        System.out.println("Tamaño de la lista: " + movieList.size());
+        System.out.println("La primera pelicula es: " + movieList.get(0).getName());
+
+        System.out.println("Peliculas:");
+        for (int i = 0; i < movieList.size(); i++){
+            System.out.println(i+1 + ". " +movieList.get(i).getName());
+        }
     }
 }
