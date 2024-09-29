@@ -16,6 +16,8 @@ public class MainWithLists {
         haroldMovie.evaluate(10);
         Serie houseOfDragons = new Serie("La casa del dragon", 2022);
 
+        Movie p1 = haroldMovie;
+
         ArrayList<Title> list = new ArrayList<>();
         list.add(myMovie);
         list.add(otherMovie);
@@ -23,9 +25,10 @@ public class MainWithLists {
         list.add(houseOfDragons);
 
         for (Title item: list){
-            System.out.println(item);
-            Movie movie = (Movie) item;
-            System.out.println(movie.getClasification());
+            System.out.println(item.getName());
+            if(item instanceof Movie movie && movie.getClasification() > 2){
+                System.out.println(movie.getClasification());
+            }
         }
     }
 }
