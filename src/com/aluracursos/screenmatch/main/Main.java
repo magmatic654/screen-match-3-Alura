@@ -1,3 +1,5 @@
+package com.aluracursos.screenmatch.main;
+
 import com.aluracursos.screenmatch.calculations.CalculatorOfTime;
 import com.aluracursos.screenmatch.calculations.RecomendationFilter;
 import com.aluracursos.screenmatch.models.Episode;
@@ -8,10 +10,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Movie myMovie = new Movie();
-
-        myMovie.setName("Encanto");
-        myMovie.setReleaseDate(2021);
+        Movie myMovie = new Movie("Encanto", 2021);
         myMovie.setLengthInMinutes(120);
         myMovie.setIsinclude(true);
 
@@ -27,18 +26,14 @@ public class Main {
         System.out.println(myMovie.getReleaseDate());
         System.out.println(myMovie.getLengthInMinutes());
 
-        Serie houseOfDragons = new Serie();
-        houseOfDragons.setName("La casa del dragón");
-        houseOfDragons.setReleaseDate(2022);
+        Serie houseOfDragons = new Serie("La casa del dragon", 2022);
         houseOfDragons.setSeasons(1);
         houseOfDragons.setMinutesForEpisode(50);
         houseOfDragons.setEpisodiesForSeason(10);
         System.out.println(houseOfDragons.getLengthInMinutes());
         houseOfDragons.showTechnicalSheet();
 
-        Movie otherMovie = new Movie();
-        otherMovie.setName("Matrix");
-        otherMovie.setReleaseDate(1998);
+        Movie otherMovie = new Movie("Matrix", 1998);
         otherMovie.setLengthInMinutes(180);
         otherMovie.showTechnicalSheet();
 
@@ -61,10 +56,8 @@ public class Main {
 
         recomendationFilter.filter(episode);
 
-        var haroldMovie = new Movie();
-        haroldMovie.setName("Alice in Wonderland");
+        var haroldMovie = new Movie("Alice in Wonderland", 2010);
         haroldMovie.setDirector("Tim Burton");
-        haroldMovie.setReleaseDate(2010);
         haroldMovie.setLengthInMinutes(108);
 
         ArrayList<Movie> movieList = new ArrayList<>();

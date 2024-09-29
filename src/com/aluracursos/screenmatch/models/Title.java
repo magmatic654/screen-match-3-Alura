@@ -1,6 +1,6 @@
 package com.aluracursos.screenmatch.models;
 
-public class Title {
+public class Title{
     public boolean calculateAverage;
     private String name;
     private int releaseDate;
@@ -9,6 +9,10 @@ public class Title {
     private double sumEvaluations;
     private int totalEvaluations;
 
+    public Title (String name, int releaseDate){
+        this.name = name;
+        this.releaseDate = releaseDate;
+    }
     public void setName(String name) {
         this.name = name;
     }
