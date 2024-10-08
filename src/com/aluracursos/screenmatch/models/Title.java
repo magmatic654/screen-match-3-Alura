@@ -1,6 +1,6 @@
 package com.aluracursos.screenmatch.models;
 
-public class Title{
+public class Title implements Comparable<Title>{
     public boolean calculateAverage;
     private String name;
     private int releaseDate;
@@ -66,5 +66,10 @@ public class Title{
 
     public double calculateAverage(){
         return sumEvaluations / totalEvaluations;
+    }
+
+    @Override
+    public int compareTo(Title otherTitle) {
+        return this.getName().compareTo(otherTitle.getName());
     }
 }
